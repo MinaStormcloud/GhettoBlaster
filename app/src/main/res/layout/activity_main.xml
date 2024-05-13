@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3F51B5"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/textView1"
+        android:background="#FFB120" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFB120"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:text="Select Files" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnSelect"
+            android:enabled="false"
+            android:text="Stop" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnStop"
+            android:layout_centerHorizontal="true"
+            android:background="#FFB120" />
+    </RelativeLayout>
+</LinearLayout>
